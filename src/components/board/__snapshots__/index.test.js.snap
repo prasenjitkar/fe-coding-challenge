@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`game renders Board with winner state 1`] = `
+<DocumentFragment>
+  <div
+    class="game"
+  >
+    <div
+      class="tic-tac-toe-board"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        >
+          X
+        </div>
+        <div
+          class="cell"
+        >
+          X
+        </div>
+        <div
+          class="cell"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+      </div>
+    </div>
+    <div
+      class="w3-container w3-center w3-animate-top"
+    >
+      <span
+        class="winner"
+      >
+        Winner: X 
+      </span>
+    </div>
+    <div
+      class="restart-button-section"
+    >
+      <button
+        class="restart-button"
+      >
+        Restart
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`game renders Board without mock data 1`] = `
+<DocumentFragment>
+  <div
+    class="game"
+  >
+    <div
+      class="tic-tac-toe-board"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+        <div
+          class="cell"
+        />
+      </div>
+    </div>
+    <div
+      class="player"
+    >
+      Player X 
+    </div>
+    <div
+      class="restart-button-section"
+    >
+      <button
+        class="restart-button"
+        disabled=""
+      >
+        Restart
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

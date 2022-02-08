@@ -1,3 +1,55 @@
 .Board {
   margin: auto;
 }
+
+.restart-button-section {
+  margin: 20px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  background-color: lightgray;
+}
+
+.winner {
+color: lightgreen;
+font-size: 100px;
+font-weight: bold;
+}
+
+.player {
+  color: blue;
+font-size: 40px;
+}
+
+.draw {
+  color: blue;
+  font-size: 100px;
+}
+
+.game {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tic-tac-toe-board {
+  display: inline;
+  padding: 5px;
+}
+
+.row {
+  display: table-row;
+  padding: 5px;
+}
+
+.cell {
+  display: table-cell;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  border: #000000 solid 1px;
+  color: white;
+  background-color: slategray;
+}

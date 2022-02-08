@@ -27,6 +27,16 @@ describe('board', () => {
 
     expect(result).toEqual(state)
   })
+
+  it('should reset the game', () => {
+    const state = createBoard(3);
+    state[0][0] = 'X'
+    state[0][1] = 'O'
+    const expectedState = createBoard(3);
+    const result = board(state, Actions.resetGame())
+
+    expect(result).toEqual(expectedState)
+  })
 })
 
 describe('game', () => {
@@ -49,5 +59,25 @@ describe('game', () => {
 
     expect(xResult).toEqual(oState)
     expect(oResult).toEqual(xState)
+  })
+
+  it('should update the winner', () => {
+    const expectedState = { currentPlayer: 'X', winner: 'X' }
+    const state = { currentPlayer: 'X', winner: null }
+
+    const result = game(state, Actions.updateWinner('X', 'X'))
+
+    expect(result).toEqual(expectedState)
+  })
+
+  it('should reset the game', () => {
+    const state = { currentPlayer: 'O', winner: null }
+    const expectedState = {
+      currentPlayer: "X",
+      winner: null
+    }
+    const result = game(state, Actions.resetGame())
+
+    expect(result).toEqual(expectedState)
   })
 })
